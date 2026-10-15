@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RM Distribuidora · Logística, Representações e Agência</title>
+<meta name="description" content="Distribuidora em São Sebastião do Paraíso - MG. Logística rápida, representação comercial e promotores para Massa da Feira, Terra Boa, Pinati, Família Trevisan e Sr. Creme.">
+<meta property="og:title" content="RM Distribuidora">
+<meta property="og:description" content="Tudo para sua empresa em um só lugar. Catálogo completo e atendimento pelo WhatsApp.">
+<meta property="og:image" content="img/rm_full.jpg">
+<link rel="icon" href="img/rm_mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07170F;--bg2:#0B2417;--green:#0F5C38;--gold:#FFC23D;--red:#E0262D;--cream:#F6F1E7;--ink:#0B2417;--line:rgba(255,255,255,.12)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:#fff;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.it{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;letter-spacing:-.01em}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.045em;line-height:.95}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.glow{position:absolute;border-radius:50%;filter:blur(110px);pointer-events:none;z-index:0}
+.grain{position:absolute;inset:0;opacity:.08;mix-blend-mode:overlay;pointer-events:none;z-index:0;width:100%;height:100%}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:16px;padding:10px 24px 10px 10px;border-radius:99px;transition:transform .2s,box-shadow .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-red{color:#fff;background:linear-gradient(180deg,rgba(240,70,76,.97),rgba(204,32,39,.94) 55%,rgba(160,18,26,.97));border:1px solid rgba(255,255,255,.4);box-shadow:inset 0 1px 1px rgba(255,255,255,.6),inset 0 -8px 16px rgba(100,0,8,.35),0 14px 34px -10px rgba(224,38,45,.7)}
+.btn-red .ico{width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.btn-ghost{color:#fff;padding:14px 24px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);backdrop-filter:blur(10px)}
+.btn-sm{font-size:14px;padding:6px 16px 6px 6px}.btn-sm .ico{width:28px;height:28px}
+
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(7,23,15,.82);backdrop-filter:blur(14px);border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav .logo img{height:34px}
+.nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;font-size:14px;font-weight:500;color:rgba(255,255,255,.75)}
+.nav ul a:hover{color:#fff}
+.burger{display:none;background:none;border:0;color:#fff;padding:8px;cursor:pointer}
+
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;overflow:hidden;background:radial-gradient(120% 80% at 80% 20%,#0F3A24 0%,var(--bg) 60%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(46px,7vw,96px);margin:18px 0 24px}
+.hero h1 .it{color:var(--gold)}
+.hero p.lead{font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:rgba(255,255,255,.72);max-width:520px;margin:0 0 34px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stats{display:flex;gap:36px;margin-top:48px;padding-top:28px;border-top:1px solid var(--line)}
+.hero-stats b{display:block;font-size:30px;font-weight:800;letter-spacing:-.04em}
+.hero-stats span{font-size:13px;color:rgba(255,255,255,.55)}
+.collage{position:relative;height:560px}
+.collage .tile{position:absolute;border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.2)}
+.collage .tile img{width:100%;height:100%;object-fit:cover}
+.collage .t1{width:58%;height:42%;left:0;top:4%;transform:rotate(-4deg)}
+.collage .t2{width:40%;height:52%;right:2%;top:0;transform:rotate(3deg)}
+.collage .t2 img{object-fit:contain;padding:14px}
+.collage .t3{width:46%;height:44%;left:6%;bottom:2%;transform:rotate(2deg)}
+.collage .t3 img{object-fit:contain;padding:14px}
+.collage .t4{width:50%;height:36%;right:0;bottom:8%;transform:rotate(-3deg)}
+.collage .badge{position:absolute;left:44%;top:43%;z-index:3;background:var(--gold);color:var(--ink);border-radius:99px;padding:12px 20px;font-weight:800;font-size:14px;box-shadow:0 12px 30px -8px rgba(255,194,61,.6);transform:rotate(-6deg)}
+
+/* sections */
+section{position:relative;overflow-x:clip}
+.sec{padding:110px 0}
+.sec-head{max-width:720px;margin-bottom:56px}
+.sec-head h2{font-size:clamp(36px,5vw,64px);margin-top:14px}
+.sec-head p{font-size:18px;line-height:1.55;color:rgba(255,255,255,.65);margin:20px 0 0}
+.light{background:var(--cream);color:var(--ink)}
+.light .sec-head p{color:#4a5e52}
+.light .eyebrow{color:#C81F25}
+
+/* serviços */
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{position:relative;padding:34px;border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid var(--line);overflow:hidden}
+.card .num{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;color:var(--gold)}
+.card h3{font-size:26px;margin:46px 0 12px;letter-spacing:-.03em}
+.card p{margin:0;color:rgba(255,255,255,.65);line-height:1.55;font-size:15px}
+.card svg{position:absolute;right:28px;top:28px;opacity:.9}
+
+/* marcas */
+.brands{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.brand{background:#fff;border-radius:20px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;min-height:200px;border:1px solid rgba(11,36,23,.08);transition:transform .25s,box-shadow .25s;cursor:pointer}
+.brand:hover{transform:translateY(-4px);box-shadow:0 24px 40px -20px rgba(11,36,23,.35)}
+.brand .lg{height:80px;display:flex;align-items:center;justify-content:center}
+.brand .lg img{max-height:80px;object-fit:contain}
+.brand b{display:block;font-size:17px;letter-spacing:-.02em;margin-top:18px}
+.brand small{display:block;color:#5b6f63;font-size:13px;margin-top:4px}
+.brand .tagx{display:inline-block;margin-top:10px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#C81F25}
+
+/* catálogo */
+.cat-tools{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:34px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:rgba(255,255,255,.04);color:rgba(255,255,255,.8);padding:10px 18px;border-radius:99px;font:600 14px Inter,sans-serif;cursor:pointer;transition:all .2s}
+.tab:hover{border-color:rgba(255,255,255,.4)}
+.tab.on{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.search{position:relative}
+.search input{width:280px;background:rgba(255,255,255,.06);border:1px solid var(--line);color:#fff;border-radius:99px;padding:12px 18px 12px 44px;font:500 15px Inter,sans-serif;outline:none}
+.search input:focus{border-color:var(--gold)}
+.search svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);opacity:.6}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.prod{display:flex;flex-direction:column;border-radius:20px;overflow:hidden;background:#0E2A1C;border:1px solid var(--line);transition:transform .25s,border-color .25s}
+.prod:hover{transform:translateY(-4px);border-color:rgba(255,194,61,.5)}
+.prod .ph{aspect-ratio:4/3;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.prod .ph img{width:100%;height:100%;object-fit:contain;padding:12px}
+.prod .ph.cover img{object-fit:cover;padding:0}
+.prod .bd{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.prod .br{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.prod h3{font-size:19px;letter-spacing:-.025em;line-height:1.15;margin:8px 0 8px}
+.prod .sz{font-size:13px;color:rgba(255,255,255,.55);line-height:1.45}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0}
+.chips span{font-size:11.5px;padding:4px 9px;border-radius:99px;background:rgba(255,255,255,.07);color:rgba(255,255,255,.8)}
+.prod .go{margin-top:auto;padding-top:16px}
+.prod .go a{display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px;font-weight:700;padding:11px;border-radius:12px;border:1px solid rgba(255,255,255,.18);transition:all .2s}
+.prod .go a:hover{background:#25D366;border-color:#25D366;color:#062}
+.empty{display:none;text-align:center;padding:60px;color:rgba(255,255,255,.5)}
+.pdf-link{display:inline-flex;gap:8px;align-items:center;margin-top:36px;color:rgba(255,255,255,.7);font-size:14px;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:2px}
+
+/* chopp banner */
+.chopp{overflow:hidden;border-radius:32px;position:relative;background:linear-gradient(140deg,#0F5C38,#07311E);padding:64px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:30px;border:1px solid rgba(255,255,255,.12)}
+.chopp h2{font-size:clamp(36px,4.6vw,60px)}
+.chopp h2 .it{color:var(--gold)}
+.chopp p{color:rgba(255,255,255,.75);font-size:18px;line-height:1.5;margin:18px 0 30px;max-width:480px}
+.chopp .vis{position:relative;height:340px}
+.chopp .vis img{position:absolute;filter:drop-shadow(0 30px 40px rgba(0,0,0,.5))}
+.chopp .sizes{display:flex;gap:10px;margin-bottom:28px}
+.chopp .sizes span{padding:8px 16px;border-radius:99px;border:1px solid rgba(255,255,255,.25);font-weight:700;font-size:14px}
+.chopp .legal{font-size:12px;color:rgba(255,255,255,.5);margin-top:18px}
+
+/* seja cliente */
+.b2b{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.segs{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 34px}
+.seg{padding:12px 18px;border-radius:99px;border:1px solid rgba(11,36,23,.2);background:#fff;font:600 14px Inter,sans-serif;color:var(--ink);cursor:pointer;transition:all .2s}
+.seg.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.steps{display:grid;gap:14px}
+.step{display:flex;gap:20px;align-items:flex-start;background:#fff;border-radius:20px;padding:24px;border:1px solid rgba(11,36,23,.08)}
+.step .n{flex:none;width:44px;height:44px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-weight:800}
+.step b{display:block;font-size:18px;letter-spacing:-.02em;margin-bottom:4px}
+.step span{color:#4a5e52;font-size:15px;line-height:1.5}
+
+/* contato */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cbox{padding:32px;border-radius:24px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+.cbox h3{font-size:22px;letter-spacing:-.03em;margin-bottom:22px}
+.cline{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--line);font-size:16px;line-height:1.45}
+.cline:first-of-type{border-top:0}
+.cline small{display:block;font-size:12px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.12em;margin-bottom:3px}
+.map{border-radius:24px;overflow:hidden;min-height:340px;border:1px solid var(--line);position:relative;background:#0E2A1C}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;filter:grayscale(.3) contrast(1.05)}
+
+footer{border-top:1px solid var(--line);padding:40px 0;color:rgba(255,255,255,.5);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer img{height:28px}
+
+.wpp-float{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.6)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:1000px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .brands{grid-template-columns:repeat(3,1fr)}
+  .hero .wrap{grid-template-columns:1fr}
+  .collage{height:420px}
+}
+@media(max-width:760px){
+  .nav ul,.nav .btn{display:none}
+  .burger{display:block}
+  .nav.open ul{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:rgba(7,23,15,.97);padding:20px 24px 28px;gap:18px;font-size:17px;border-bottom:1px solid var(--line)}
+  .wrap{padding:0 16px}
+  .sec{padding:76px 0}
+  .hero{padding:104px 0 60px}
+  .hero-stats{gap:22px}
+  .hero-stats b{font-size:24px}
+  .collage{height:330px}
+  .cards3,.b2b,.contact{grid-template-columns:1fr}
+  .b2b{gap:30px}
+  .brands{grid-template-columns:repeat(2,1fr)}
+  .brand{min-height:170px;padding:16px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .prod .bd{padding:14px}
+  .prod h3{font-size:16px}
+  .chips{display:none}
+  .prod .go a{font-size:13px;padding:10px 6px;white-space:nowrap}
+  .brand:last-child{grid-column:span 2}
+  .brand{justify-content:flex-start}
+  .brand b{margin-top:14px}
+  .search,.search input{width:100%}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -16px;padding:0 16px 4px;scrollbar-width:none}
+  .tab{flex:none}
+  .chopp{grid-template-columns:1fr;padding:36px 24px}
+  .chopp .vis{height:240px;order:-1}
+  .btn{font-size:15px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+<symbol id="wpp" viewBox="0 0 32 32"><path fill="#25D366" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3z"/><path fill="#fff" d="M12.2 9.5c-.3-.6-.6-.6-.9-.6h-.8c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.4 3.6 1.5 3.9c.2.3 2.7 4.3 6.6 5.8 3.3 1.3 3.9 1 4.6.9.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.8-.5s-2.3-1.1-2.6-1.3c-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.3-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.7-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.7.1-.3.1-.5 0-.7-.1-.2-.8-2.1-1.2-2.9z"/></symbol></svg>
+
+<header id="hd">
+  <div class="wrap nav" id="nav">
+    <a href="#topo" class="logo"><img src="img/rm_mark_white.png" alt="RM Distribuidora"></a>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#marcas">Marcas</a></li>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#chopp">Chopp</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a class="btn btn-red btn-sm" href="#" data-wpp="Olá! Vim pelo site e quero ser cliente da RM Distribuidora."><span class="ico"><svg width="18" height="18"><use href="#wpp"/></svg></span>Seja cliente</a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><svg width="26" height="26" fill="none" stroke="#fff" stroke-width="2"><path d="M3 7h20M3 13h20M3 19h20"/></svg></button>
+  </div>
+</header>
+
+<section class="hero" id="topo">
+  <div class="glow" style="width:520px;height:520px;right:-120px;top:-80px;background:#FFC23D;opacity:.16"></div>
+  <div class="glow" style="width:600px;height:600px;left:-260px;bottom:-200px;background:#1a8a55;opacity:.28"></div>
+  <svg class="grain"><rect width="100%" height="100%" filter="url(#n)"/></svg>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Logística · Representações · Agência</span>
+      <h1>Tudo para sua empresa <span class="it">em um só lugar.</span></h1>
+      <p class="lead">Distribuímos marcas que vendem para mercados, padarias, lanchonetes, bares e restaurantes de São Sebastião do Paraíso e região. Atendimento rápido e resultado certo.</p>
+      <div class="cta">
+        <a class="btn btn-red" href="#" data-wpp="Olá! Vim pelo site e gostaria de falar com um representante da RM."><span class="ico"><svg width="22" height="22"><use href="#wpp"/></svg></span>Falar com representante</a>
+        <a class="btn btn-ghost" href="#catalogo">Ver catálogo →</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>5</b><span>marcas parceiras</span></div>
+        <div><b>50+</b><span>itens no catálogo</span></div>
+        <div><b>Sul de MG</b><span>e região</span></div>
+      </div>
+    </div>
+    <div class="collage" aria-hidden="true">
+      <div class="tile t1"><img src="img/sc_fruits.jpg" alt=""></div>
+      <div class="tile t2"><img src="img/mf_pizza.jpg" alt=""></div>
+      <div class="tile t3"><img src="img/tb_latas.jpg" alt=""></div>
+      <div class="tile t4"><img src="img/sc_magic.jpg" alt=""></div>
+      <div class="badge">Pediu, chegou.</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="sobre">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Quem somos</span>
+      <h2>Mais que entregar. <span class="it" style="color:var(--gold)">Fazer vender.</span></h2>
+      <p>A RM Distribuidora conecta indústrias e pontos de venda. Cuidamos da entrega, do relacionamento e da exposição do produto na gôndola, para que o seu estoque gire e o cliente encontre o que procura.</p>
+    </div>
+    <div class="cards3">
+      <div class="card reveal"><svg width="34" height="34" fill="none" stroke="#FFC23D" stroke-width="1.8"><path d="M2 8h18v14H2zM20 13h6l5 5v4h-11z"/><circle cx="8" cy="25" r="3"/><circle cx="25" cy="25" r="3"/></svg><span class="num">01</span><h3>Logística rápida</h3><p>Rota própria e entrega ágil, com produtos refrigerados e congelados acondicionados do jeito certo.</p></div>
+      <div class="card reveal"><svg width="34" height="34" fill="none" stroke="#FFC23D" stroke-width="1.8"><circle cx="17" cy="10" r="6"/><path d="M5 31c1-7 6-10 12-10s11 3 12 10"/></svg><span class="num">02</span><h3>Representação comercial</h3><p>Um representante que conhece o seu negócio, ajuda no mix e acompanha cada pedido de perto.</p></div>
+      <div class="card reveal"><svg width="34" height="34" fill="none" stroke="#FFC23D" stroke-width="1.8"><path d="M4 30V12l13-8 13 8v18"/><path d="M10 30v-9h14v9M10 16h14"/></svg><span class="num">03</span><h3>Promotores colaborativos</h3><p>Equipe no ponto de venda para abastecer, organizar e destacar os produtos na prateleira.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec light" id="marcas">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Marcas</span>
+      <h2>Quem a gente <span class="it" style="color:#0F5C38">leva até você.</span></h2>
+      <p>Marcas reconhecidas, com giro garantido, em congelados, bebidas, snacks saudáveis e sorvetes.</p>
+    </div>
+    <div class="brands" id="brands"></div>
+  </div>
+</section>
+
+<section class="sec" id="catalogo">
+  <div class="glow" style="width:600px;height:600px;right:-300px;top:200px;background:#1a8a55;opacity:.18"></div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Catálogo</span>
+      <h2>Escolha, toque e <span class="it" style="color:var(--gold)">peça a cotação.</span></h2>
+      <p>Filtre por marca ou busque pelo produto. O pedido vai direto para o WhatsApp do nosso time comercial.</p>
+    </div>
+    <div class="cat-tools">
+      <div class="tabs" id="tabs"></div>
+      <label class="search"><svg width="18" height="18" fill="none" stroke="#fff" stroke-width="2"><circle cx="8" cy="8" r="6"/><path d="M13 13l4 4"/></svg><input id="q" type="search" placeholder="Buscar produto…"></label>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty">Nenhum produto encontrado. <a href="#" data-wpp="Olá! Procurei no site e não encontrei um produto. Vocês trabalham com…" style="color:var(--gold)">Pergunte pra gente</a>.</div>
+  </div>
+</section>
+
+<section class="sec" id="chopp" style="padding-top:20px">
+  <div class="wrap">
+    <div class="chopp reveal">
+      <div class="glow" style="width:420px;height:420px;right:-80px;top:-120px;background:#FFC23D;opacity:.25"></div>
+      <svg class="grain"><rect width="100%" height="100%" filter="url(#n)"/></svg>
+      <div style="position:relative;z-index:1">
+        <span class="eyebrow">Chopp Terra Boa · Festas e eventos</span>
+        <h2 style="margin-top:14px">Vai ter festa? <span class="it">A gente leva o chopp.</span></h2>
+        <p>Barril com chopeira para aniversários, churrascos e eventos. Use a calculadora e descubra quantos litros pedir.</p>
+        <div class="sizes"><span>10 L</span><span>30 L</span><span>50 L</span></div>
+        <a class="btn btn-red" href="https://chopp.rmdistrlogi.com.br"><span class="ico"><svg width="20" height="20" fill="none" stroke="#C81F25" stroke-width="2.4"><rect x="3" y="2" width="14" height="16" rx="2"/><path d="M6 6h8M6 10h2M10 10h2M14 10h0M6 14h2M10 14h2"/></svg></span>Calcular meu chopp</a>
+        <div class="legal">Beba com moderação · Venda proibida para menores de 18 anos</div>
+      </div>
+      <div class="vis">
+        <img src="img/barril.webp" alt="Barril de chopp Terra Boa" style="height:100%;right:22%;bottom:0">
+        <img src="img/caneca2.webp" alt="" style="height:72%;right:0;bottom:0">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec light" id="cliente">
+  <div class="wrap b2b">
+    <div class="reveal">
+      <span class="eyebrow">Seja cliente RM</span>
+      <h2 style="font-size:clamp(36px,5vw,60px);margin-top:14px">Seu ponto de venda <span class="it" style="color:#0F5C38">abastecido</span> sem dor de cabeça.</h2>
+      <p style="font-size:18px;line-height:1.55;color:#4a5e52;margin:20px 0 0">Qual é o seu negócio?</p>
+      <div class="segs" id="segs">
+        <button class="seg on">Mercado</button><button class="seg">Padaria</button><button class="seg">Lanchonete</button><button class="seg">Bar</button><button class="seg">Restaurante</button><button class="seg">Pastelaria</button><button class="seg">Pizzaria</button><button class="seg">Conveniência</button><button class="seg">Outro</button>
+      </div>
+      <a class="btn btn-red" href="#" id="b2bBtn"><span class="ico"><svg width="22" height="22"><use href="#wpp"/></svg></span>Quero ser cliente</a>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><div class="n">1</div><div><b>Fale com a gente</b><span>Conte o seu segmento e o que você já vende. Respondemos pelo WhatsApp.</span></div></div>
+      <div class="step"><div class="n">2</div><div><b>Montamos o seu mix</b><span>O representante indica os produtos com melhor giro para o seu público.</span></div></div>
+      <div class="step"><div class="n">3</div><div><b>Entrega e reposição</b><span>Recebe no prazo combinado e conta com promotores para manter a gôndola cheia.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contato">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Contato</span>
+      <h2>Vamos <span class="it" style="color:var(--gold)">conversar?</span></h2>
+    </div>
+    <div class="contact">
+      <div class="cbox reveal">
+        <h3>RM Distribuidora</h3>
+        <div class="cline"><svg width="22" height="22"><use href="#wpp"/></svg><div><small>WhatsApp</small><a href="#" data-wpp="Olá! Vim pelo site da RM Distribuidora.">(35) 9 9879-0889</a></div></div>
+        <div class="cline"><svg width="22" height="22" fill="none" stroke="#FFC23D" stroke-width="2"><rect x="2" y="4" width="18" height="14" rx="2"/><path d="M2 6l9 6 9-6"/></svg><div><small>E-mail</small><a href="mailto:rmdistrlogi@gmail.com">rmdistrlogi@gmail.com</a></div></div>
+        <div class="cline"><svg width="22" height="22" fill="none" stroke="#FFC23D" stroke-width="2"><path d="M11 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="11" cy="9" r="2.5"/></svg><div><small>Endereço</small>Rua Pinto Ribeiro, 600 A · Centro<br>São Sebastião do Paraíso · MG · 37950-008<br><a href="https://www.google.com/maps/search/?api=1&query=Rua+Pinto+Ribeiro+600+S%C3%A3o+Sebasti%C3%A3o+do+Para%C3%ADso+MG" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;font-size:14px">Abrir no Google Maps →</a></div></div>
+      </div>
+      <div class="map reveal">
+        <iframe loading="lazy" title="Mapa" src="https://www.google.com/maps?q=Rua+Pinto+Ribeiro,+600,+S%C3%A3o+Sebasti%C3%A3o+do+Para%C3%ADso+-+MG&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="img/rm_mark_white.png" alt="RM Distribuidora">
+    <div>© <span id="yr"></span> RM Distribuidora · Logística, Representações e Agência</div>
+    <div>Beba com moderação · Venda de bebidas alcoólicas proibida para menores de 18 anos</div>
+  </div>
+</footer>
+
+<a class="wpp-float" href="#" data-wpp="Olá! Vim pelo site da RM Distribuidora." aria-label="WhatsApp"><svg width="34" height="34" viewBox="0 0 32 32"><path fill="#fff" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3z"/><path fill="#25D366" d="M12.2 9.5c-.3-.6-.6-.6-.9-.6h-.8c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.4 3.6 1.5 3.9c.2.3 2.7 4.3 6.6 5.8 3.3 1.3 3.9 1 4.6.9.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.8-.5s-2.3-1.1-2.6-1.3c-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.3-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.7-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.7.1-.3.1-.5 0-.7-.1-.2-.8-2.1-1.2-2.9z"/></svg></a>
+
+<script>
+const WPP='5535998790889';
+const wa=t=>`https://wa.me/${WPP}?text=${encodeURIComponent(t)}`;
+
+const BRANDS=[
+  {id:'mf',name:'Massa da Feira',logo:'mf_logo.jpg',desc:'Massas frescas: pastel, pizza, lasanha, nhoque e pão de alho.'},
+  {id:'tb',name:'Terra Boa',logo:'tb_logo.jpg',desc:'Cervejaria artesanal de Minas: latas, garrafas e chopp.'},
+  {id:'pn',name:'Pinati',logo:'pn_logo.jpg',desc:'Barras proteicas, doces e castanhas.',tag:'Distribuidor autorizado'},
+  {id:'tr',name:'Família Trevisan',logo:'tr_queijo.jpg',desc:'Salgados congelados prontos para fritar ou assar.'},
+  {id:'sc',name:'Sr. Creme',logo:'sc_logo.jpg',desc:'Sorvetes, picolés, potes e açaí.'}
+];
+const P=[
+  // Massa da Feira
+  ['mf','Massa para pastel 500 g','Rolo · 500 g','mf_pastel500.jpg',[]],
+  ['mf','Massa para pastel 1 kg','Rolo · 1 kg','mf_pastel1kg.jpg',[]],
+  ['mf','Massa para pastel integral','500 g','mf_integral.jpg',[]],
+  ['mf','Massa para pastel gourmet','500 g','mf_gourmet.jpg',[]],
+  ['mf','Pastel uso profissional 2 kg','Rolo · 2 kg','mf_prof2kg.jpg',[]],
+  ['mf','Pastel uso profissional 3 kg','Rolo · 3 kg','mf_prof3kg.jpg',[]],
+  ['mf','Disco de pastel tradicional 400 g','Discos · 400 g','mf_disco400.jpg',[]],
+  ['mf','Disco de pastel tradicional 500 g','Discos · 500 g','mf_disco500.jpg',[]],
+  ['mf','Massa para lasanha','500 g','mf_lasanha.jpg',[]],
+  ['mf','Nhoque de batata','1 kg','mf_nhoque1kg.jpg',[]],
+  ['mf','Massa para pizza','2 discos · 280 g','mf_pizza.jpg',[]],
+  ['mf','Massa para pizza brotinho','8 discos · 300 g','mf_brotinho.jpg',[]],
+  ['mf','Pizza de frigideira','10 discos · 270 g','mf_frigideira.jpg',[]],
+  ['mf','Massa para mini pizza','15 discos · 450 g','mf_minipizza.jpg',[]],
+  ['mf','Pão de alho tradicional','360 g','mf_alho_trad.jpg',[]],
+  ['mf','Pão de alho gourmet pimenta','400 g','mf_alho_pimenta.jpg',[]],
+  ['mf','Pão de alho gourmet calabresa','400 g','mf_alho_calabresa.jpg',[]],
+  // Terra Boa
+  ['tb','Cerveja Terra Boa em lata','Lata','tb_latas.jpg',['Pilsen','IPA','Hop Lager','Irish Red Ale','Tropical IPA','Catharina Sour Goiaba']],
+  ['tb','Chopp Terra Boa garrafa 500 ml','Garrafa · 500 ml','tb_garrafa.jpg',['Pilsen','IPA','Hop Lager','Irish Red Ale','Tropical IPA','Catharina Sour Goiaba']],
+  ['tb','Chopp Terra Boa em barril','Barril · 10, 30 e 50 L','tb_barris.jpg',['Pilsen','IPA','Escuro','Vinho']],
+  // Pinati
+  ['pn','Pinati Proteicos','Barras proteicas','pn_proteicos.jpg',[]],
+  ['pn','Pinati Doces','Doces e barras','pn_doces.jpg',[]],
+  ['pn','Pinati Castanhas','Castanhas e mixes','pn_castanhas.jpg',[]],
+  // Trevisan
+  ['tr','Bolinha de batata com queijo','400 g','tr_queijo.jpg',[]],
+  ['tr','Bolinho de batata com carne','400 g','tr_carne.jpg',[]],
+  ['tr','Bolinho de batata de milho com requeijão','400 g','tr_milho.jpg',[]],
+  ['tr','Coxinha de batata com frango e requeijão','400 g','tr_coxinha.jpg',[]],
+  ['tr','Kibe de batata com requeijão','400 g','tr_kibe_req.jpg',[]],
+  ['tr','Kibe de batata vegano','400 g','tr_kibe_vegano.jpg',[]],
+  ['tr','Linha food service 2 kg','Pacote 2 kg · caixa com 4','tr_inst.jpg',['Queijo','Carne','Milho c/ requeijão','Coxinha','Kibe'],'c'],
+  ['tr','Batata rústica','1,05 kg','tr_rustica.jpg',[]],
+  ['tr','Nhoque de batata','500 g','tr_nhoque.jpg',[]],
+  // Sr. Creme
+  ['sc','Açaí com guaraná','200 ml · 1,5 L','sc_acai.jpg',[],'c'],
+  ['sc','Linha Clássicos','Potes e picolés','sc_classicos.jpg',[],'c'],
+  ['sc','Cremosíssimos','Picolés recheados','sc_cremosos.jpg',[],'c'],
+  ['sc','Sr. Fruits','Picolés de fruta','sc_fruits.jpg',[],'c'],
+  ['sc','Linha Kids','Picolés infantis','sc_kids.jpg',[],'c'],
+  ['sc','Linha Skimo','Picolés com cobertura','sc_skimo.jpg',[],'c'],
+  ['sc','Premiums Top 4','Picolés premium','sc_premium.jpg',[],'c'],
+  ['sc','Uauuu','200 ml','sc_uauuu.jpg',['Leitinho trufado','Napolitano'],'c'],
+  ['sc','Sobremezza Magic','400 ml','sc_magic.jpg',[],'c'],
+  ['sc','Linha Premium Sobremezza','1,8 L','sc_sobremezza.jpg',[],'c'],
+  ['sc','Lançamentos','Novidades da linha','sc_caixa6.jpg',[],'c'],
+];
+const bname=id=>BRANDS.find(b=>b.id===id).name;
+
+// brands
+document.getElementById('brands').innerHTML=BRANDS.map(b=>`
+  <div class="brand reveal" data-b="${b.id}"><div class="lg"><img src="img/${b.logo}" alt="${b.name}" loading="lazy"></div>
+  <div><b>${b.name}</b><small>${b.desc}</small>${b.tag?`<span class="tagx">${b.tag}</span>`:''}</div></div>`).join('');
+document.querySelectorAll('.brand').forEach(el=>el.onclick=()=>{setTab(el.dataset.b);document.getElementById('catalogo').scrollIntoView()});
+
+// tabs
+let cur='all';
+const tabs=document.getElementById('tabs');
+tabs.innerHTML=`<button class="tab on" data-t="all">Todos</button>`+BRANDS.map(b=>`<button class="tab" data-t="${b.id}">${b.name}</button>`).join('');
+tabs.onclick=e=>{if(e.target.dataset.t)setTab(e.target.dataset.t)};
+function setTab(t){cur=t;tabs.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.t===t));render()}
+document.getElementById('q').oninput=render;
+
+const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+function render(){
+  const q=norm(document.getElementById('q').value.trim());
+  const list=P.filter(p=>(cur==='all'||p[0]===cur)&&(!q||norm([bname(p[0]),p[1],p[2],...p[4]].join(' ')).includes(q)));
+  document.getElementById('grid').innerHTML=list.map(p=>`
+   <article class="prod"><div class="ph${p[5]?' cover':''}"><img src="img/${p[3]}" alt="${p[1]}" loading="lazy"></div>
+   <div class="bd"><span class="br">${bname(p[0])}</span><h3>${p[1]}</h3><div class="sz">${p[2]}</div>
+   ${p[4].length?`<div class="chips">${p[4].map(f=>`<span>${f}</span>`).join('')}</div>`:''}
+   <div class="go"><a href="${wa(`Olá! Vim pelo site e gostaria de uma cotação de: ${p[1]} (${bname(p[0])}).`)}" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#wpp"/></svg>Pedir cotação</a></div></div></article>`).join('');
+  document.getElementById('empty').style.display=list.length?'none':'block';
+}
+render();
+
+// b2b segment
+let seg='Mercado';
+document.getElementById('segs').onclick=e=>{if(e.target.classList.contains('seg')){document.querySelectorAll('.seg').forEach(s=>s.classList.remove('on'));e.target.classList.add('on');seg=e.target.textContent}};
+document.getElementById('b2bBtn').onclick=e=>{e.preventDefault();window.open(wa(`Olá! Tenho um(a) ${seg.toLowerCase()} e quero ser cliente da RM Distribuidora.`),'_blank')};
+
+// whatsapp links
+document.querySelectorAll('[data-wpp]').forEach(a=>{a.href=wa(a.dataset.wpp);a.target='_blank';a.rel='noopener'});
+document.querySelectorAll('.nav ul a').forEach(a=>a.onclick=()=>document.getElementById('nav').classList.remove('open'));
+
+// header + reveal
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>30),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
